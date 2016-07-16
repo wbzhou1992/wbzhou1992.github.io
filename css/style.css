@@ -508,6 +508,7 @@ body {
 }
 .article {
   margin: 50px 0;
+  font-family: 'Roboto', sans-serif;
 }
 .article-inner {
   overflow: hidden;
@@ -537,7 +538,9 @@ body {
   margin: 0 12px 1em;
 }
 .article-header {
-  padding: 20px 20px 0;
+  padding: 20px 20px 20px;
+  font-size: 20px;
+  text-align: center;
 }
 .article-title {
   text-decoration: none;
@@ -556,7 +559,6 @@ a.article-title:hover {
 }
 .article-entry {
   color: #555;
-  padding: 0 20px;
 }
 .article-entry:before,
 .article-entry:after {
@@ -570,6 +572,13 @@ a.article-title:hover {
 .article-entry table {
   line-height: 1.6em;
   margin: 1.6em 0;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 20px;
+  text-align: justify;
+  text-indent: 2em;
 }
 .article-entry h1,
 .article-entry h2,
@@ -606,7 +615,7 @@ a.article-title:hover {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 0;
 }
 .article-entry iframe {
   border: none;
@@ -743,6 +752,7 @@ a.article-title:hover {
 }
 #article-nav {
   position: relative;
+  font-size: 17px;
 }
 #article-nav:before,
 #article-nav:after {
@@ -1051,8 +1061,7 @@ a.article-title:hover {
 #page-nav a,
 #page-nav span {
   padding: 10px 20px;
-  line-height: 1;
-  height: 2ex;
+  line-height: 1em;
 }
 #page-nav a {
   color: #999;
@@ -1070,6 +1079,7 @@ a.article-title:hover {
 }
 #page-nav .page-number {
   display: inline-block;
+  line-height: 1em;
 }
 @media screen and (max-width: 479px) {
   #page-nav .page-number {
@@ -1292,6 +1302,21 @@ pre .javascript .function {
   .mobile-nav-link:hover {
     color: #fff;
   }
+}
+.signature {
+  font-family: 'Tangerine', serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+  text-shadow: 4px 4px 4px #aaa;
+  margin: 20px;
+}
+.content-img {
+  padding: 0;
+  margin: 0 auto;
+}
+.lyrics {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   #sidebar {
