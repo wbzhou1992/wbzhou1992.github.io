@@ -416,8 +416,13 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 17px;
   letter-spacing: 1px;
+}
+a.main-nav-link:hover {
+  color: #258fb8;
+  text-decoration: none;
 }
 @media screen and (max-width: 479px) {
   .main-nav-link {
@@ -1323,8 +1328,7 @@ pre .javascript .function {
   font-style: normal;
   background-color: #000;
   color: #2798d8;
-  margin-bottom: -52px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   #sidebar {
