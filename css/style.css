@@ -574,7 +574,7 @@ a.article-title:hover {
   margin: 1.6em 0;
   font-family: 'Roboto';
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   padding: 0 20px;
   text-align: justify;
@@ -1317,6 +1317,14 @@ pre .javascript .function {
 }
 .lyrics {
   text-align: center;
+  font-family: Verdana, Arial;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #000;
+  color: #2798d8;
+  margin-bottom: -52px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   #sidebar {
