@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: speech | WBZHOU</title>
+  <title>5. Longest Palindromic Substring | WBZHOU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WBZHOU">
-<meta property="og:url" content="http://yoursite.com/tags/speech/index.html">
+  <meta name="description" content="Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5. Longest Palindromic Substring">
+<meta property="og:url" content="http://yoursite.com/2016/07/21/5.Longest Palindromic Substring/index.html">
 <meta property="og:site_name" content="WBZHOU">
-<meta property="og:description">
+<meta property="og:description" content="Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.">
+<meta property="og:updated_time" content="2016-07-21T15:05:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WBZHOU">
-<meta name="twitter:description">
+<meta name="twitter:title" content="5. Longest Palindromic Substring">
+<meta name="twitter:description" content="Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.">
   
   
     <link rel="icon" href="img/ico.png">
@@ -57,87 +58,84 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/06/19/NPotrman/" class="archive-article-date">
-  <time datetime="2016-06-19T05:23:36.000Z" itemprop="datePublished">6月 19</time>
+        <section id="main"><article id="post-5.Longest Palindromic Substring" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/21/5.Longest Palindromic Substring/" class="article-date">
+  <time datetime="2016-07-21T14:01:09.000Z" itemprop="datePublished">2016-07-21</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/19/NPotrman/">Natalie Portman Harvard Commencement Speech Commencement 2015</a>
+    <h1 class="article-title" itemprop="name">
+      5. Longest Palindromic Substring
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/06/JKspeech/" class="archive-article-date">
-  <time datetime="2015-12-06T14:02:56.000Z" itemprop="datePublished">12月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/06/JKspeech/">J.K.Rowling Commencement Speech at Harvard</a>
-    </h1>
-  
+        <hr>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/06/SJspeech/" class="archive-article-date">
-  <time datetime="2015-12-06T14:02:37.000Z" itemprop="datePublished">12月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/06/SJspeech/">Steve Jobs&#39; 2005 Stanford Commencement Address</a>
-    </h1>
-  
+<p>Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.</p>
+<a id="more"></a>
+<p>题目描述：</p>
+<p>给出一个字符串，求最长回文子串</p>
+<p>Solution:</p>
+<p>两个指针high和low，指向两个相同的字符，分字符串长度为奇偶判断，找到相同的两个字符，high++，low–，最长回文就是high-low-1，每次循环更新找到最长回文</p>
+<p><strong>java:<strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> l=s.length();</span><br><span class="line">        <span class="keyword">if</span>(l&lt;=<span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        <span class="keyword">int</span> maxLen=<span class="number">0</span>,start=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;l;i++)&#123;</span><br><span class="line">           <span class="keyword">int</span> low=i-<span class="number">1</span>,high=i;</span><br><span class="line">            <span class="keyword">while</span>(low&gt;=<span class="number">0</span>&amp;&amp;high&lt;l&amp;&amp;s.charAt(low)==s.charAt(high))&#123;</span><br><span class="line">                low--;</span><br><span class="line">                high++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(high-low-<span class="number">1</span>&gt;maxLen)&#123;</span><br><span class="line">                maxLen=high-low-<span class="number">1</span>;</span><br><span class="line">                start=low+<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            low=i-<span class="number">1</span>;</span><br><span class="line">            high=i+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(low&gt;=<span class="number">0</span>&amp;&amp;high&lt;l&amp;&amp;s.charAt(low)==s.charAt(high))&#123;</span><br><span class="line">                low--;</span><br><span class="line">                high++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(high-low-<span class="number">1</span>&gt;maxLen)&#123;</span><br><span class="line">                maxLen=high-low-<span class="number">1</span>;</span><br><span class="line">                start=low+<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s.substring(start,start+maxLen);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></strong></strong></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/21/5.Longest Palindromic Substring/" data-id="ciqwhfsdl0022ukjt9hk8ynu5" class="article-share-link">Share</a>
+      
+        <a href="http://yoursite.com/2016/07/21/5.Longest Palindromic Substring/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/21/6.ZigZag Conversion/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          6. ZigZag Conversion
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/20/4.Median of Two Sorted/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">4. Median of Two Sorted Arrays</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -258,11 +256,13 @@
 <script>
   var disqus_shortname = 'wbzhou';
   
+  var disqus_url = 'http://yoursite.com/2016/07/21/5.Longest Palindromic Substring/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

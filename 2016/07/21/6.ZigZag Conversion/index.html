@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: speech | WBZHOU</title>
+  <title>6. ZigZag Conversion | WBZHOU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WBZHOU">
-<meta property="og:url" content="http://yoursite.com/tags/speech/index.html">
+  <meta name="description" content="The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="6. ZigZag Conversion">
+<meta property="og:url" content="http://yoursite.com/2016/07/21/6.ZigZag Conversion/index.html">
 <meta property="og:site_name" content="WBZHOU">
-<meta property="og:description">
+<meta property="og:description" content="The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)">
+<meta property="og:updated_time" content="2016-07-21T15:05:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WBZHOU">
-<meta name="twitter:description">
+<meta name="twitter:title" content="6. ZigZag Conversion">
+<meta name="twitter:description" content="The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)">
   
   
     <link rel="icon" href="img/ico.png">
@@ -57,87 +58,95 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/06/19/NPotrman/" class="archive-article-date">
-  <time datetime="2016-06-19T05:23:36.000Z" itemprop="datePublished">6月 19</time>
+        <section id="main"><article id="post-6.ZigZag Conversion" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/21/6.ZigZag Conversion/" class="article-date">
+  <time datetime="2016-07-21T14:37:20.000Z" itemprop="datePublished">2016-07-21</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/19/NPotrman/">Natalie Portman Harvard Commencement Speech Commencement 2015</a>
+    <h1 class="article-title" itemprop="name">
+      6. ZigZag Conversion
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/06/JKspeech/" class="archive-article-date">
-  <time datetime="2015-12-06T14:02:56.000Z" itemprop="datePublished">12月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/06/JKspeech/">J.K.Rowling Commencement Speech at Harvard</a>
-    </h1>
-  
+        <hr>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/06/SJspeech/" class="archive-article-date">
-  <time datetime="2015-12-06T14:02:37.000Z" itemprop="datePublished">12月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/06/SJspeech/">Steve Jobs&#39; 2005 Stanford Commencement Address</a>
-    </h1>
-  
+<p>The string <code>“PAYPALISHIRING”</code> is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)</p>
+<a id="more"></a>
+<pre class="descript">
+    P   A   H   N
+    A P L S I I G
+    Y   I   R
+</pre>
 
-    </header>
+<p>And then read line by line: <code>“PAHNAPLSIIGYIR”</code></p>
+<p>Write the code that will take a string and make this conversion given a number of rows:</p>
+<pre>    string convert(string text, int nRows);</pre>
+
+<p><code>convert(“PAYPALISHIRING”, 3)</code> should return <code>“PAHNAPLSIIGYIR”</code>.</p>
+<p>题目描述：</p>
+<p>给出一个整数数组和一个整数target,找出数组中两数之和等于target的数的索引</p>
+<p>Solution:</p>
+<p>维护两个指针指向当前相加的数组元素位置索引，依次向后移动，直到和等于target，把结果索引保存在一个长度为2的数组中，返回</p>
+<p><strong>java:<strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)&#123;</span><br><span class="line">    <span class="keyword">int</span> result[]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">      	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">          	<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;nums.length;j++)&#123;</span><br><span class="line">              	<span class="keyword">if</span>(nums[i]+nums[j]==target)&#123;</span><br><span class="line">                  	result[<span class="number">0</span>]=i;</span><br><span class="line">                	result[<span class="number">1</span>]=j;</span><br><span class="line">              	&#125;</span><br><span class="line">         	&#125;</span><br><span class="line">      	&#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></strong></strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/21/6.ZigZag Conversion/" data-id="ciqwhfsdd001zukjtdy1mhm1u" class="article-share-link">Share</a>
+      
+        <a href="http://yoursite.com/2016/07/21/6.ZigZag Conversion/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/21/Goodluck/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Good luck
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/21/5.Longest Palindromic Substring/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">5. Longest Palindromic Substring</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -258,11 +267,13 @@
 <script>
   var disqus_shortname = 'wbzhou';
   
+  var disqus_url = 'http://yoursite.com/2016/07/21/6.ZigZag Conversion/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
