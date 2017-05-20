@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f47fff;
+  background: #ff2d1b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2547,13 +2547,11 @@ embed {
 }
 .lyrics {
   text-align: center;
-  font-family: "楷体";
-  font-size: 1.3em;
+  font-family: sans-serif;
   background-color: #eee;
   color: #2798d8;
   line-height: 1.5;
   padding-bottom: 32px;
-  word-spacing: -4px;
 }
 .signature {
   font-family: 'Tangerine', serif;
